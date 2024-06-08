@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
         body {
-            background-image: url("C:/Users/sadha/OneDrive/Desktop/my_flask_app/templates/bg.jpg"); /* Replace with your image URL */
+            background-image: url("https://repository-images.githubusercontent.com/275336521/20d38e00-6634-11eb-9d1f-6a5232d0f84f"); /* Replace with your image URL */
             color: white; /* Set all text to white */
         }
         .form-label {
@@ -54,17 +54,5 @@
         <button type="submit" class="btn btn-light">Recommend</button>
     </form>
 
-    <div id="recommendations">
-        {% if posters %}
-            <h2>Recommended Movies:</h2>
-            <div class="row">
-                {% for poster in posters %}
-                    <div class="poster">
-                        <img src="{{ poster }}" alt="Movie Poster">
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-    </div>
 </body>
 </html>
