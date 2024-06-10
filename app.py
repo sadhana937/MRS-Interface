@@ -70,7 +70,7 @@ def predict():
     # Get the posters for the recommended movies
     posters = show_similar(movie_name, item_similar_indices, item_encoder, df_items)
 
-    return render_template('predict.html', posters=posters)
+    return render_template('predict.html', posters=posters, movie_name = request.form['movie'])
 
 # Run the Flask app
 if __name__ == '__main__':
